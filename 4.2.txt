@@ -1,0 +1,10 @@
+All tables should be in BCNF
+
+The booking table should include all information required to fulfil a booking, a booking isn't paid if payment is null.
+The payment table contains all information related to doing a credit card payment.
+The passenger table holds information needed by each unique passenger included in a booking.
+The contact table extends the passenger so it can act as a contact for the booking
+The flight table holds information relevant to the flight travel and information that makes it identifiable in the weekly flights table.
+The weeklyflights table holds information about all flights during each week for a year.
+The day table holds information about the price factor for each day in a week.
+The route table holds information about the price factor for that round, where it's going and where it's heading.
